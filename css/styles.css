@@ -128,34 +128,28 @@ img {
 }
 .contacts-data  {
    display: block;
-
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
    color: var(--Secondary-text-color);
+   fill: var(--svg-color);
 }
 .contacts-data:hover,
 .contacts-data:focus {
    color: var(--Accent);
    fill: var(--Accent);
+
 }
 .contacts .tel-link:not(:last-child) {
    margin-right: 50px;
 }
 
 .contacts-svg {
-   width: 16px;
-   height: 12px;
    margin-right: 10px;
-   fill: var(--svg-color);
 }
-.contacts-svg:hover,
-.contacts-svg:focus {
-   fill: var(--Accent);
 
-}
 
 					/*=================== HERO ================= */
 
@@ -238,9 +232,11 @@ img {
 }
 
 .features-icon {
-   padding-top: 25px;
-   padding-bottom: 25px;
-   text-align: center;
+   width: 270px;
+   height: 120px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    margin-bottom: 30px;
    background: #F5F4FA;
    border-radius: 4px;
@@ -359,8 +355,9 @@ img {
 }
 
 .social-network-link {
-   text-align: center;
-   padding: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 44px;
    height: 44px;
    border-radius: 50%;
@@ -396,16 +393,14 @@ img {
    justify-content: center;
 }
 
-.client-item {
-   padding: 0;
-}
 
 .client-link {
-   width: 170px;
-   height: 92px;
-   padding: 16px 32px ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    border: 1px solid var(--svg-color);
    border-radius: 4px;
+   fill: var(--svg-color);
 }
 
 .client-link:hover,
@@ -420,15 +415,9 @@ img {
 }
 
 .client-svg {
-   width: 106px;
-   height: 60px;
-   fill: var(--svg-color);
+   width: 170px;
+   height: 92px;
 }
-
-.client-svg:hover,
-.client-svg:focus {
-   fill: var(--Accent);
-   }
 
 
                         /* =================== FOOTER =================== */
